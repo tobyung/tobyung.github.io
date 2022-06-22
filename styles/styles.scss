@@ -433,6 +433,28 @@ section{
     }
 }
 
+//Tools Section
+.tools{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 2rem 0;
+    .tool-item{
+        position: relative;
+        padding-left: 5rem;
+        .tool-icon{
+            align-items: center;
+            i{
+                font-size: 4rem;
+                &:hover{
+                    color: var(--color-secondary);
+                    transform: scale(1.4);
+                }
+            }
+        }
+    }
+}
+
+
 //Portfolios
 .port-text{
     padding: 2rem 0;
