@@ -21,6 +21,10 @@
         padding-bottom: 6rem;
     }
 
+    .tools {
+        grid-template-columns: 1fr !important;
+    }
+
     .section{
         padding: 2rem 2.5rem ;
     }
@@ -72,6 +76,12 @@
         }
     }
 
+    .tools{
+        grid-template-columns: repeat(2, 1fr);
+        .tool-icon{
+            padding: 2rem;
+        }
+    }
 
     .portfolios{
         grid-template-columns: 1fr 1fr;
@@ -153,6 +163,7 @@
         bottom: 80px;
         right: 10px;
     }
+    
 }
 
 @media screen and (max-width: 700px){
@@ -189,3 +200,4 @@
     }
     
 }
+

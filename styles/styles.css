@@ -581,25 +581,31 @@ section {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  padding: 2rem 0;
+  padding: 3rem 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  justify-items: center;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tools .tool-item {
   position: relative;
-  padding-left: 5rem;
 }
 
-.tools .tool-item .tool-icon {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.tools .tool-item .tool-icon p {
+  text-align: center;
 }
 
 .tools .tool-item .tool-icon i {
   font-size: 4rem;
 }
 
-.tools .tool-item .tool-icon i:hover {
+.tools .tool-item .tool-icon:hover {
   color: var(--color-secondary);
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
@@ -1118,6 +1124,10 @@ input[type=submit]:hover {
         grid-template-columns: 1fr;
     padding-bottom: 6rem;
   }
+  .tools {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
   .section {
     padding: 2rem 2.5rem;
   }
@@ -1168,6 +1178,13 @@ input[type=submit]:hover {
   }
   .about-container .right-about {
     padding-top: 2.5rem;
+  }
+  .tools {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .tools .tool-icon {
+    padding: 2rem;
   }
   .portfolios {
     -ms-grid-columns: 1fr 1fr;
